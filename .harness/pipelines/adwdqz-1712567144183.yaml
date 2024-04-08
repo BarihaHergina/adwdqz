@@ -1,0 +1,33 @@
+pipeline:
+  name: Build adwdqz
+  identifier: Build_BarihaHergina_adwdqz_1712567150154
+  projectIdentifier: gasdqwz
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1712567138439
+        repoName: BarihaHergina/adwdqz
+        build: <+input>
