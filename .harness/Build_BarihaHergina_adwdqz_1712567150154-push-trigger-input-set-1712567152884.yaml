@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_BarihaHergina_adwdqz_1712567150154-push-trigger-input-set
+  identifier: Build_BarihaHergina_adwdqz_1712567150154pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: gasdqwz
+  pipeline:
+    identifier: Build_BarihaHergina_adwdqz_1712567150154
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
