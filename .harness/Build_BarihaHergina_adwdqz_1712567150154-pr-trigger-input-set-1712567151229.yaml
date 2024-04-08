@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_BarihaHergina_adwdqz_1712567150154-pr-trigger-input-set
+  identifier: Build_BarihaHergina_adwdqz_1712567150154prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: gasdqwz
+  pipeline:
+    identifier: Build_BarihaHergina_adwdqz_1712567150154
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
